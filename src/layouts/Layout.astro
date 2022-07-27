@@ -3,24 +3,18 @@ import "~/styles/base.css"
 
 import Header from "~/components/headers/BasicHeader.astro"
 import Footer from "~/components/footers/BasicFooter.astro";
+import BaseHead from "~/components/BaseHead.astro";
+import settings from '~/config/settings';
 
-const { title = "", description = "", withHeader = true } = Astro.props;
+const title = Astro.props.title || settings.title;
+const description = Astro.props.description || settings.description;
 ---
 
 <html lang="tr">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <title>{title}</title>
-  <meta name="description" content={description}>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
+<BaseHead />
 
-<body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900">
+<body class="body-class">
   <Header />
   <slot />
   <Footer />
@@ -53,5 +47,8 @@ const { title = "", description = "", withHeader = true } = Astro.props;
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .04), 0 4px 6px -2px rgba(0, 0, 0, .02);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .body-class {
+    @apply antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900;
   }
 </style>

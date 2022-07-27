@@ -1,6 +1,7 @@
 ---
   import { IconTwitter, IconInstagram, IconFacebook, IconArrowRight } from "~/components/icons";
   const { } = Astro.props;
+  import settings from '~/config/settings';
 ---
 
 <footer>
@@ -127,6 +128,9 @@
       </ul> -->
       <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
         Made by <a class="text-blue-600 hover:underline" href="https://cemkaan.com/">Cem Kaan</a>
+        <p>
+          © {settings.name}
+        </p>
       </div>
     </div>
   </div>
