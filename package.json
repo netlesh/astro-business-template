@@ -1,0 +1,16 @@
+{
+  "name": "@onwidget/astrowind",
+  "version": "0.0.2",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^0.2.1",
+    "@astrojs/tailwind": "^0.2.1",
+    "astro": "^1.0.0-beta.53"
+  }
+}
