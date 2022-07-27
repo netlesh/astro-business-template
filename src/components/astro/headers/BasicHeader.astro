@@ -22,13 +22,13 @@ import { IconSun, IconGithub, IconMenu } from "~/components/astro/icons";
     <div class="items-center w-full lg:w-auto hidden lg:flex text-gray-600 dark:text-slate-200" id="menu">
       <ul class="flex flex-col py-2 lg:py-0 lg:flex-row lg:self-center collapse w-full lg:w-auto collapsed">
         <li>
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="#">Products</a>
+          <a class="menu-item" href="#">Products</a>
         </li>
         <li>
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="#">Docs</a>
+          <a class="menu-item" href="#">Docs</a>
         </li>
         <li>
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="#">Resources</a>
+          <a class="menu-item" href="#">Resources</a>
         </li>
       </ul>
       <!-- <div class="lg:self-center flex items-center mb-4 lg:mb-0 collapse collapsed">
@@ -65,3 +65,11 @@ import { IconSun, IconGithub, IconMenu } from "~/components/astro/icons";
   }
   window.toggleMenu = toggleMenu
 </script>
+<style>
+  .menu-item {
+    @apply font-medium hover:text-gray-900 ;
+    @apply px-4 py-3 flex items-center ;
+    @apply dark:hover:text-white ;
+    @apply transition duration-150 ease-in-out;
+  }
+</style>
