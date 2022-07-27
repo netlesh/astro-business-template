@@ -1,18 +1,17 @@
 ---
 import "~/styles/base.css"
 
-import Header from "~/components/astro/headers/BasicHeader.astro"
-import Footer from "~/components/astro/footers/BasicFooter.astro";
+import Header from "~/components/headers/BasicHeader.astro"
+import Footer from "~/components/footers/BasicFooter.astro";
 
 const { title = "", description = "", withHeader = true } = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="tr">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <title>{title}</title>
   <meta name="description" content={description}>
