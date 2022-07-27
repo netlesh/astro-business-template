@@ -1,14 +1,14 @@
 ---
-  import "~/styles/base.css"
+import "~/styles/base.css"
 
-  import Header from "~/components/astro/headers/BasicHeader.astro"
-  import Footer from "~/components/astro/footers/BasicFooter.astro";
+import Header from "~/components/astro/headers/BasicHeader.astro"
+import Footer from "~/components/astro/footers/BasicFooter.astro";
 
-  const { title = "", description = "", withHeader = true } = Astro.props;
+const { title = "", description = "", withHeader = true } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,7 @@
   <meta name="description" content={description}>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900">
@@ -33,7 +33,7 @@
   :root {}
 
   :global(body) {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   :global(.btn, .btn-sm) {
@@ -56,22 +56,3 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 </style>
-
-<script is:inline>
-  function toggleDarkMode() {
-    document.documentElement.classList.toggle("dark");
-    localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light"
-  }
-  window.toggleDarkMode = toggleDarkMode
-
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-
-  function toggleMenu() {
-    document.getElementById("menu").classList.toggle("hidden");
-  }
-  window.toggleMenu = toggleMenu
-</script>

@@ -1,26 +1,19 @@
 ---
-  import { IconSun, IconGithub, IconMenu } from "~/components/astro/icons";
-  const { } = Astro.props;
+import { IconSun, IconGithub, IconMenu } from "~/components/astro/icons";
 ---
 
-<header
-  class="fixed top-0 z-40 flex-none mx-auto w-full bg-white/90 dark:bg-slate-900 backdrop-blur-sm border-b dark:border-b-0">
+<header class="fixed top-0 z-40 flex-none mx-auto w-full bg-white/90 dark:bg-slate-900 backdrop-blur-sm border-b dark:border-b-0">
 
   <div class="py-3 px-3 mx-auto w-full lg:flex lg:justify-between max-w-6xl lg:px-4">
     <div class="flex justify-between">
       <a class="flex items-center" href="/">
-        <span
-          class="self-center ml-2 text-2xl font-extrabold text-gray-900 whitespace-nowrap dark:text-white">AstroWind</span>
+        <span class="self-center ml-2 text-2xl font-extrabold text-gray-900 whitespace-nowrap dark:text-white">AstroWind</span>
       </a>
       <div class="flex items-center lg:hidden">
-        <button type="button"
-          class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-          onclick="window.toggleDarkMode()">
+        <button type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" onclick="window.toggleDarkMode()">
           <IconSun />
         </button>
-        <button
-          class="ml-1 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-          onclick="toggleMenu()">
+        <button class="ml-1 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" onclick="toggleMenu()">
 
           <IconMenu />
         </button>
@@ -29,34 +22,46 @@
     <div class="items-center w-full lg:w-auto hidden lg:flex text-gray-600 dark:text-slate-200" id="menu">
       <ul class="flex flex-col py-2 lg:py-0 lg:flex-row lg:self-center collapse w-full lg:w-auto collapsed">
         <li>
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="#">Products</a>
+          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="#">Products</a>
         </li>
         <li>
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="#">Docs</a>
+          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="#">Docs</a>
         </li>
         <li>
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="#">Resources</a>
+          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out" href="#">Resources</a>
         </li>
       </ul>
-      <div class="lg:self-center flex items-center mb-4 lg:mb-0 collapse collapsed">
+      <!-- <div class="lg:self-center flex items-center mb-4 lg:mb-0 collapse collapsed">
         <div class="hidden items-center mr-3 lg:flex">
-          <button type="button"
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-            onclick="window.toggleDarkMode()">
+          <button type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center" onclick="window.toggleDarkMode()">
             <IconSun />
           </button>
-          <a href="https://github.com/onwidget/astrowind"
-            class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+          <a href="https://github.com/onwidget/astrowind" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
             <IconGithub />
           </a>
 
-          <!-- <a class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-center ml-3 btn-sm" href="/login/">Get started
-          </a> -->
+          <a class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium  text-center ml-3 btn-sm" href="/login/">Get started
+          </a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>
+<script is:inline>
+  /*   function toggleDarkMode() {
+      document.documentElement.classList.toggle("dark");
+      localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light"
+    }
+    window.toggleDarkMode = toggleDarkMode
+  
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    } */
+
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("hidden");
+  }
+  window.toggleMenu = toggleMenu
+</script>
