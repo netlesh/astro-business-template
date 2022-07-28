@@ -1,5 +1,6 @@
 ---
 import "~/styles/base.css"
+import "~/styles/variables.css"
 
 import Header from "~/components/headers/BasicHeader.astro"
 import Footer from "~/components/footers/BasicFooter.astro";
@@ -23,17 +24,20 @@ const description = Astro.props.description || settings.description;
 </html>
 
 <style>
-  :root {}
+
 
   :global(body) {
     font-family: 'Open Sans', sans-serif;
   }
+  :global(main) {
+		@apply mt-20;
+	}
 
   :global(.btn, .btn-sm) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.25rem;
+    border-radius: var(--theme-button-border-radius);
     border-width: 1px;
     border-color: transparent;
     font-weight: 500;
@@ -49,6 +53,7 @@ const description = Astro.props.description || settings.description;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
   .body-class {
-    @apply antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900;
+    @apply antialiased text-gray-900 dark:text-slate-300 tracking-tight  dark:bg-slate-900;
+    background-color: var(--theme-bg);
   }
 </style>
