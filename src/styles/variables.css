@@ -1,12 +1,12 @@
 :root {
 	/* Theme Colors */
   /* https://odyssey-theme-docs.littlesticks.dev/en/theme/customizing-the-theme/#colors */
-	--theme-primary: hsl(0, 0%, 0%);
+	--theme-primary: hsl(150, 45%, 33%);
 	--theme-primary-hover: hsl(0, 0%, 20%);
 	--theme-on-primary: #fff;
 
 	--theme-bg: #fff;
-	--theme-on-bg: #000;
+	--theme-on-bg: rgb(184, 65, 65);
 
 	--theme-surface-1: #f2f2f2;
 	--theme-on-surface-1: #000;
@@ -29,11 +29,9 @@
 	--container-max-width-narrow: 960px;
 	--container-padding: 0 1rem;
 
-	--theme-blog-post-header-width: 1200px;
 
 	/* Theme Fonts */
-	--theme-font-family-serif: 'Roboto Serif', Georgia, Cambria, 'Times New Roman',
-		Times, serif;
-	--theme-font-family-sans: 'Lato', -apple-system, BlinkMacSystemFont,
+
+	--theme-font-family-sans: 'Open Sans', -apple-system, BlinkMacSystemFont,
 		sans-serif;
 }

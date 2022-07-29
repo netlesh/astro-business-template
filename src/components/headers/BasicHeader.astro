@@ -3,7 +3,7 @@ import {  IconMenu } from "~/components/icons";
 import Logo from "../Logo.astro";
 ---
 <header>
-  <div class="py-3 px-3 mx-auto w-full lg:flex lg:justify-between max-w-6xl lg:px-4">
+  <div class="header-container">
     <div class="flex justify-between">
       <a class="flex items-center" href="/">
         <Logo />
@@ -14,7 +14,7 @@ import Logo from "../Logo.astro";
         </button>
       </div>
     </div>
-    <div id="menu" class="items-center w-full lg:w-auto hidden lg:flex text-gray-600 " >
+    <div id="menu" >
       <ul >
 
         <li>
@@ -42,6 +42,9 @@ import Logo from "../Logo.astro";
     @apply fixed top-0 z-40 flex-none mx-auto w-full bg-white/90;
     @apply  dark:bg-slate-900 backdrop-blur-sm border-b dark:border-b-0;
   }
+  .header-container {
+    @apply py-3 px-3 mx-auto w-full lg:flex lg:justify-between max-w-6xl lg:px-4;
+  }
   .icon-button {
     @apply ml-1 text-gray-500  hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200;
     @apply dark:text-gray-400 dark:hover:bg-gray-800  dark:focus:ring-gray-700 ;
@@ -49,6 +52,7 @@ import Logo from "../Logo.astro";
   }
   #menu {
     @apply dark:text-slate-200;
+    @apply items-center w-full lg:w-auto hidden lg:flex text-gray-600;
   }
   ul {
     @apply flex flex-col py-2 lg:py-0 lg:flex-row lg:self-center  w-full lg:w-auto ;
