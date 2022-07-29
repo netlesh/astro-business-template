@@ -1,5 +1,5 @@
 ---
-  import { IconTwitter, IconInstagram, IconFacebook, IconArrowRight } from "~/components/icons";
+  import { Icon } from "astro-icon";
   const { } = Astro.props;
   import settings from '~/config/settings';
 ---
@@ -93,8 +93,7 @@
                 <button type="submit" class="absolute inset-0 left-auto" aria-label="Subscribe">
                   <span class="absolute inset-0 right-auto w-px -ml-px my-2 bg-gray-300 dark:bg-slate-600"
                     aria-hidden="true"></span>
-
-                  <IconArrowRight className="w-5 h-5 text-blue-600 mx-3 flex-shrink-0" />
+                    <Icon name="bi:arrow-right"  />
                 </button>
               </div>
             </div>
@@ -123,4 +122,8 @@
   .menu-item {
     @apply text-gray-600 hover:text-gray-700 transition duration-150 ease-in-out;
   }
+
+  [astro-icon="bi:arrow-right"] {
+		@apply w-5 h-5 text-blue-600 mx-3 flex-shrink-0;
+    }
 </style>

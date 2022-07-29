@@ -13,5 +13,8 @@
     "@astrojs/tailwind": "^0.2.5",
     "astro": "^1.0.0-rc.1",
     "prettier-plugin-astro": "^0.1.2"
+  },
+  "dependencies": {
+    "astro-icon": "^0.7.3"
   }
 }
