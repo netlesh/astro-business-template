@@ -14,7 +14,7 @@ src\components\Logo.astro
 
 ## Menu
 
-src\components\headers\BasicHeader.astro
+src\layouts\Layout.astro
 
 ## Icons
 

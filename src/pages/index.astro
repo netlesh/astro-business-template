@@ -1,17 +1,20 @@
 ---
 import Layout from '~/layouts/Layout.astro';
 
-import BasicCTA from '~/components/ctas/BasicCTA.astro';
 import BasicFeatures from '~/components/features/BasicFeatures.astro';
 import StepsFeatures from '~/components/features/StepsFeatures.astro';
-import HeroWithImage from '~/components/hero/HeroWithImage.astro';
+import HeroWithImage from '~/components/heros/HeroWithImage.astro';
+import CenteredHero from '~/components/heros/CenteredHero.astro';
 ---
 
 <Layout title="Astro + Tailwind CSS" description="page desc">
 	<main>
 		<HeroWithImage />
+		<div class="divider"></div> 
 		<BasicFeatures />
+		<div class="divider divide-secondary"></div> 
 		<StepsFeatures />
-		<BasicCTA />
+		<div class="divider"></div> 
+		<CenteredHero />
 	</main>
 </Layout>

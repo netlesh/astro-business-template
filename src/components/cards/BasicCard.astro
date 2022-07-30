@@ -2,27 +2,25 @@
 export interface Props {
   baslik: string;
   metin?: string;
+  resim?: string;
+  link?: string;
 }
-const { baslik = 'Hello', metin  } = Astro.props as Props;
+const { baslik = 'Hello', metin , resim, link = "#" } = Astro.props as Props;
 ---
 
-<div class=" card">
-    <div class="flex items-center mb-4">
-        
-      <div class="ml-4 text-xl font-bold">
-        {baslik}
-      </div>
-    </div>
-    <p >
-      {metin}
-    </p>
-  </div>
 
-  <style>
-    .card {
-    @apply relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl dark:border dark:border-slate-800;
-    }
-    p{
-      @apply text-gray-500 dark:text-gray-400 ;
-    }
-  </style>
+<div class="card ">
+  <figure><img src={resim} alt={baslik} /></figure>
+  <div class="card-body">
+    <h2 class="card-title">{baslik}</h2>
+    <p>{metin}</p>
+    <div class="card-actions justify-end">
+      <a class="btn btn-primary" href={link} >Detay</a>
+    </div>
+  </div>
+</div>
+<style>
+  .card {
+    @apply  shadow-xl  relative flex flex-col ;
+  }
+</style>

@@ -3,25 +3,49 @@ import BasicCard from "../cards/BasicCard.astro";
   const { } = Astro.props;
 ---
 <section >
-  <div class="fon" aria-hidden="true"></div>
   <div class="features-container">
     <div class="features-padding">
       <div class="ust">
         <p class="ust-baslik">
           Basc Features
         </p>
-        <h2>
-          Most used Sections
-        </h2><p class="ust-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        <h2> Most used Sections</h2>
+        <p class="ust-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
       </div>
       <div class="alt">
-        <BasicCard baslik="Başlık" metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et. Sequi qui est id rem minus dolore. Ut vitae occaecati culpa aperiam id."  />
-        <BasicCard baslik="Başlık" metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et. Sequi qui est id rem minus dolore. Ut vitae occaecati culpa aperiam id.…"/>
-        <BasicCard baslik="Başlık" metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et. Sequi qui est id rem minus dolore. Ut vitae occaecati culpa aperiam id.…"/>
-        <BasicCard baslik="Başlık" metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et. Sequi qui est id rem minus dolore. Ut vitae occaecati culpa aperiam id.…"/>
-        <BasicCard baslik="Başlık" metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et. Sequi qui est id rem minus dolore. Ut vitae occaecati culpa aperiam id.…"/>
-        <BasicCard baslik="Başlık" metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et. Sequi qui est id rem minus dolore. Ut vitae occaecati culpa aperiam id.…"/>
+        <BasicCard baslik="Başlık" 
+        resim="https://placeimg.com/300/150/arch/grayscale"
+        link="urunler"
+        metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et." 
+        />
+        <BasicCard baslik="Başlık" 
+        resim="https://placeimg.com/300/150/arch/grayscale"
+        link="urunler"
+        metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et." 
+        />
+        <BasicCard baslik="Başlık" 
+        resim="https://placeimg.com/300/150/arch/grayscale"
+        link="urunler"
+        metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et." 
+        />
+        <BasicCard baslik="Başlık" 
+        resim="https://placeimg.com/300/150/arch/grayscale"
+        link="urunler"
+        metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et." 
+        />
+        <BasicCard baslik="Başlık" 
+        resim="https://placeimg.com/300/150/arch/grayscale"
+        link="urunler"
+        metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et." 
+        />
+        <BasicCard baslik="Başlık" 
+        resim="https://placeimg.com/300/150/arch/grayscale"
+        link="urunler"
+        metin="Quis at ut quae temporibus aut magnam et ad. Molestias quas quos vel. Officia neque odio iusto animi odit omnis occaecati et." 
+        />
+
+        
       </div>
     </div>
   </div>
@@ -31,9 +55,6 @@ import BasicCard from "../cards/BasicCard.astro";
   section {
     @apply relative ;
   }
-  .fon {
-    @apply absolute inset-0  pointer-events-none mb-32;
-  }
   .features-container {
     @apply relative max-w-6xl mx-auto px-4 sm:px-6;
   }
@@ -41,14 +62,13 @@ import BasicCard from "../cards/BasicCard.astro";
     @apply py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12;
   }
   .ust {
-    @apply mb-8 text-center;
+    @apply mb-8 text-center text-primary;
   }
   h2{
     @apply sm:text-3xl text-2xl font-medium text-center  mb-20;
   }
   .ust-baslik {
     @apply text-base  font-semibold tracking-wide uppercase;
-
   }
   .ust-p {
     @apply max-w-3xl mx-auto text-center text-xl ;
