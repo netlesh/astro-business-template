@@ -1,16 +1,22 @@
 ---
 import Layout from '~/layouts/Layout.astro';
-
+import HeroWithFigure from '~/components/heros/HeroWithFigure.astro';
 ---
 
 <Layout title="Hakkımızda" description="page desc">
 	<main>
-		<h2>Hakkımızda</h2>
+		<HeroWithFigure img="https://placeimg.com/300/400/arch"> 
+			<h1>We are</h1>
+			<p>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+		</HeroWithFigure>
 	</main>
 </Layout>
 <style>
 	main {
-		@apply mt-24 ;
+		@apply mt-4 ;
+	}
+	p {
+		@apply py-6;
 	}
 
 </style>

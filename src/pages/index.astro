@@ -5,10 +5,12 @@ import BasicFeatures from '~/components/features/BasicFeatures.astro';
 import StepsFeatures from '~/components/features/StepsFeatures.astro';
 import HeroWithImage from '~/components/heros/HeroWithImage.astro';
 import CenteredHero from '~/components/heros/CenteredHero.astro';
+import CarouselWithButtons from '~/components/carousels/CarouselWithButtons.astro';
 ---
 
 <Layout title="Astro + Tailwind CSS" description="page desc">
 	<main>
+		<CarouselWithButtons />
 		<HeroWithImage />
 		<div class="divider"></div> 
 		<BasicFeatures />
@@ -18,3 +20,8 @@ import CenteredHero from '~/components/heros/CenteredHero.astro';
 		<CenteredHero />
 	</main>
 </Layout>
+<style>
+	main {
+		@apply relative;
+	}
+</style>
