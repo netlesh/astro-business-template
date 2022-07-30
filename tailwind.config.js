@@ -4,6 +4,20 @@ module.exports = {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		require("@tailwindcss/typography"),
+		require('daisyui')
+	],
 	darkMode: 'class',
+	// daisyUI config (optional)
+	daisyui: {
+		styled: true,
+		themes: ["pastel", "dark"],
+		base: true,
+		utils: true,
+		logs: false,
+		rtl: false,
+		prefix: "",
+		darkTheme: "dark",
+	},
 }

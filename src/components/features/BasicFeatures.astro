@@ -10,7 +10,7 @@ import BasicCard from "../cards/BasicCard.astro";
         <p class="ust-baslik">
           Basc Features
         </p>
-        <h2 >
+        <h2>
           Most used Sections
         </h2><p class="ust-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
@@ -29,12 +29,10 @@ import BasicCard from "../cards/BasicCard.astro";
 
 <style>
   section {
-    @apply relative;
+    @apply relative ;
   }
   .fon {
     @apply absolute inset-0  pointer-events-none mb-32;
-    background-color: var(--theme-surface-1);
-    color: var(--theme-on-surface-1);
   }
   .features-container {
     @apply relative max-w-6xl mx-auto px-4 sm:px-6;
@@ -45,12 +43,15 @@ import BasicCard from "../cards/BasicCard.astro";
   .ust {
     @apply mb-8 text-center;
   }
+  h2{
+    @apply sm:text-3xl text-2xl font-medium text-center  mb-20;
+  }
   .ust-baslik {
     @apply text-base  font-semibold tracking-wide uppercase;
-    color: var(--theme-primary);
+
   }
   .ust-p {
-    @apply max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400;
+    @apply max-w-3xl mx-auto text-center text-xl ;
   }
   .alt {
     @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start my-12 dark:text-white;
