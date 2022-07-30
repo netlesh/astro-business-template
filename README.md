@@ -1,5 +1,7 @@
 # Şirket
 
+![template](./Screenshot.jpg)
+
 ## Global SEO
 
 src\config\settings.js
