@@ -36,7 +36,6 @@ import Logo from "../Logo.astro";
     const menuItems = [...mainMenu.querySelectorAll('a:not([rel*="external"])')];
     menuItems.forEach(menuItem => {
       if (menuItem.getAttribute("href") === window.location.pathname) {
-        console.log('menuItem :>> ', menuItem);
         menuItem.classList.add('active')
         menuItem.setAttribute('aria-current', 'page')
       }
