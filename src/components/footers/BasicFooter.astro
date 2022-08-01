@@ -2,6 +2,7 @@
   import { Icon } from "astro-icon";
   const { } = Astro.props;
   import settings from '~/config/settings';
+  const year = new Date().getFullYear();
 ---
 
 <footer >
@@ -102,9 +103,9 @@
     <div class="md:flex md:items-center md:justify-between py-4 md:py-8">
 
       <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
-        Made by <a class="text-success-content  hover:underline" href="https://cemkaan.com/">Cem Kaan</a>
+        Made by <a class="text-success  hover:underline" href="https://cemkaan.com/" target="_blank" >Cem Kaan</a>
         <p>
-          © {settings.name}
+          Copyright  © {settings.name} {year}
         </p>
       </div>
     </div>
