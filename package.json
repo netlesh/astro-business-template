@@ -1,7 +1,20 @@
 {
   "name": "@netlesh/astro-business-template",
-  "version": "0.2.1",
-  "private": true,
+  "version": "0.3.0",
+  "private": false,
+  "author": "Cem Kaan Kösalı<netlesh@mail.ru>",
+  "license": "MIT",
+  "homepage": "https://github.com/netlesh/astro-business-template",
+  "keywords": [
+    "template",
+    "all-in-one",
+    "sitemap",
+    "business",
+    "astro",
+    "tailwind",
+    "tailwindcss",
+    "postcss"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

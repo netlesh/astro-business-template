@@ -6,11 +6,15 @@
 
     Tailwind CSS Komponentleri
     Hızlı site tasarım
-    Temiz Kod
+    Temiz Kodlu 16 Komponent
     Özelleştirilebilinir
     Temalar oluşturulabilir
-    Arama Motoru Optimizasyonu
+    Arama Motoru Optimizasyonu / Sitemap
+    Open Graph / Facebook / Twitter
+    Google Fonts ve Analytics
     İletişim Sayfasında otomatik adresli harita
+
+[Örnek Komponent (BasicNavbar)](https://github.com/netlesh/astro-business-template/blob/main/src/components/navbars/BasicNavbar.astro#L1)
 
 --------
 
@@ -31,8 +35,9 @@
 
 ### SEO
 
-Adres bölümünden
 src\config\settings.js
+
+src\components\BaseHead.astro
 
 ### Logo
 
@@ -66,7 +71,7 @@ aşağıdaki sitelerden kod blokları kullanabilirsiniz
 
 ---
 
-## İletişim
+## İletişim 📧
 
 🕸 [cemkaan.com](www.cemkaan.com)
 
@@ -78,7 +83,7 @@ aşağıdaki sitelerden kod blokları kullanabilirsiniz
 
 **Twitter**: [Twitter](https://twitter.com/CemKaanGuru)
 
-Web şablonu yapmak ve güncel tutmak için çok uğraştım bağış yapmayı düşünün.
+Web şablonu yapmak ve güncel tutmak için çok uğraştım ...
 
 ![Donate LiteCoin](https://raw.githubusercontent.com/scottycc/coinwidget.com/master/icon_litecoin.png)
 **Bağış için LiteCoin Adresim:** `LaF4Kjh7MYh7yYBjBX2CEPjGhZ614ffMh8`

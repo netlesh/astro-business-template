@@ -6,9 +6,11 @@ export interface Props {
 	description?: string;
 	url?: URL | string;
 	image?: string;
+	analytics?: string;
 }
 
 const title = Astro.props.title || settings.title;
+const analytics = Astro.props.analytics || settings.analytics;
 const description = Astro.props.description || settings.description;
 const { canonicalURL = settings.url } = Astro.props;
 const image = new URL(Astro.props.image || './social.png', Astro.site);
@@ -47,10 +49,11 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 </head>
 
 <!-- Google Analytics -->
-<script>
+<script is:inline>
   var host = window.location.hostname;
   if(host != 'localhost') {
     // Place Google Analytics code here.
+    {analytics}
   }
 </script>
 
