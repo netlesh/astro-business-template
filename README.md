@@ -29,7 +29,7 @@
 ![template](./Screenshot.jpg)
 Örnek Ekran görüntüsü
 
----
+--------
 
 ## Temel Ayarlar
 
@@ -69,7 +69,7 @@ aşağıdaki sitelerden kod blokları kullanabilirsiniz
 
 <https://stackdiary.com/tailwind-components-ui-kits/>
 
----
+--------
 
 ## İletişim 📧
 
