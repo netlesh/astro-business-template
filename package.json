@@ -1,6 +1,6 @@
 {
   "name": "@netlesh/astro-business-template",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "private": false,
   "author": "Cem Kaan Kösalı<netlesh@mail.ru>",
   "license": "MIT",
@@ -22,13 +22,13 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^0.3.0",
-    "@astrojs/tailwind": "^0.2.5",
+    "@astrojs/sitemap": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
     "@tailwindcss/typography": "^0.5.4",
-    "astro": "^1.0.0-rc.3",
+    "astro": "^1.0.8",
     "autoprefixer": "^10.4.8",
-    "daisyui": "^2.20.0",
-    "prettier-plugin-astro": "^0.2.0"
+    "daisyui": "^2.24.0",
+    "prettier-plugin-astro": "^0.5.3"
   },
   "dependencies": {
     "astro-icon": "^0.7.3",
